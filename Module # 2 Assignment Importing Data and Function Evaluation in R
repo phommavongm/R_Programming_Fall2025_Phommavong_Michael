@@ -1,3 +1,8 @@
+This file is for our module 2 assignment.
+Below you can see the the results from testing myMean function. The issue returns an error during testing.
+To fix the issue I changed the argument and variables of the function to 'data'. After testing the function, it returns 19.25.
+
+
 > # Michael Phomavong
 > # Module 2 Assignment Importing Data and Function Evaluation in R
 > 
@@ -14,7 +19,7 @@
 > 
 > # Test the function
 > myMean(assignment2)
-Error in myMean(assignment2) : object 'assig
+Error in myMean(assignment2) : object 'assigntment' not found
 
 
 
