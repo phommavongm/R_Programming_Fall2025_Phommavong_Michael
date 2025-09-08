@@ -14,5 +14,16 @@
 > 
 > # Test the function
 > myMean(assignment2)
-Error in myMean(assignment2) : object 'assignment' not found
+Error in myMean(assignment2) : object 'assig
 
+
+
+> # Corrected version
+> myMean <- function(data) {
++   return(sum(data) / length(data))
++ }
+> 
+> 
+> # Test the function
+> myMean(assignment2)
+[1] 19.25
