@@ -15,3 +15,4 @@
 > # Test the function
 > myMean(assignment2)
 Error in myMean(assignment2) : object 'assignment' not found
+
