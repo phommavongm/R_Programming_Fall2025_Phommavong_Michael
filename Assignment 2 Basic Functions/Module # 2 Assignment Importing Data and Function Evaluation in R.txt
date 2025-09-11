@@ -1,0 +1,34 @@
+This file is for our module 2 assignment.
+Below you can see the the results from testing myMean function. The issue returns an error during testing.
+To fix the issue I changed the argument and variables of the function to 'data'. After testing the function, it returns 19.25.
+
+
+> # Michael Phomavong
+> # Module 2 Assignment Importing Data and Function Evaluation in R
+> 
+> # Evaluate myMean Function
+> # Use the vector:
+> assignment2 <- c(16, 18, 14, 22, 27, 17, 19, 17, 17, 22, 20, 22)
+> 
+> 
+> # Consider this function:
+> myMean <- function(assignment2) {
++   return(sum(assignment) / length(someData))
++ }
+> 
+> 
+> # Test the function
+> myMean(assignment2)
+Error in myMean(assignment2) : object 'assigntment' not found
+
+
+
+> # Corrected version
+> myMean <- function(data) {
++   return(sum(data) / length(data))
++ }
+> 
+> 
+> # Test the function
+> myMean(assignment2)
+[1] 19.25
