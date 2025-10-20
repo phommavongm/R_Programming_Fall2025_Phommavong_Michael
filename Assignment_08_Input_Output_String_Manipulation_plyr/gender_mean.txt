@@ -1,0 +1,4 @@
+Gender	Mean_Happiness
+Female	8.36681222707424
+Male	8.34677419354839
+Other	8.78260869565217
