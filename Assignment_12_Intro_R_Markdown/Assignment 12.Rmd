@@ -1,0 +1,61 @@
+---
+title: "My R Markdown Primer"
+author: "Michael Phommavong"
+date: "2025-11-16"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction
+
+This document provides a brief introduction to R Markdown, a framework that lets you combine text, code, and mathematical notation in a single reproducible report. R Markdown automatically runs your R code and displays results within the final output.
+
+
+## What R Markdown Is
+
+R Markdown is a powerful tool within the R ecosystem that allows users to create 
+dynamic, reproducible documents by combining narrative text, R code, and the results 
+(like tables, plots, statistical outputs) into a single file.
+
+
+## LaTex math expression
+
+Here is an inline math expression:
+The standard deviation is computed as $\sigma = \sqrt{\frac{1}{n}\sum(x_i - \bar{x})^2}$.
+
+Here is a displayed (centered) LaTeX equation:
+$$
+f(x) = \frac{1}{\sqrt{2\pi\sigma^2}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}
+$$
+
+
+## Example Code 1: Loading a dataset
+```{r}
+# Load the built-in 'mtcars' dataset
+data(mtcars)
+
+# Show the first few rows
+head(mtcars)
+```
+
+
+## Example Code 2: Summary statistics for mpg and basic scatter plot
+```{r}
+# Summary statistics for mpg
+summary(mtcars$mpg)
+
+# Basic scatter plot
+plot(mtcars$hp, mtcars$mpg,
+main = "MPG vs Horsepower",
+xlab = "Horsepower",
+ylab = "Miles per Gallon",
+pch = 19)
+```
+
+
+## Reflection
+
+Working with R Markdown has given me more experience working with code and learning how narrative text can be integrated into one document. By using tools such as "knit" in R Markdown, I can compile all the information into a formatted report and make analyses more reproducible.
